@@ -191,7 +191,38 @@ body {
     color: #000;
 }
 
-/** Media Queries */
+/** - Order Now - */
+
+#order-now {
+    background-color: #eb8072;
+}
+
+#order-now .content {
+    padding-top: 86px;
+    padding-bottom: 86px;
+}
+
+#order-now h2 {
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+}
+
+#order-now .buttons-wrapper {
+    gap: 16px;
+}
+
+#order-now .buttons-wrapper button {
+    font-size: 32px;
+    line-height: 47px;
+    color: #fff;
+    background-color: #282f4b;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+/** - Media Queries - */
 
 @media only screen and (max-width: 1400px) {
 }
