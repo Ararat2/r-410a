@@ -21,7 +21,7 @@ const onMobileMenuClose = () => {
 }
 
 const onMobileMenuClick = e => {
-    if (e.target.tagName === "A") {
+    if (e.target.tagName === "A" || e.target.tagName === "BUTTON") {
         onMobileMenuClose();
     }
 };
@@ -34,6 +34,7 @@ mobileMenu.addEventListener("click", onMobileMenuClick);
 
 const orderModal = document.querySelector("#order-modal");
 const orderButton = document.querySelector("#order-button");
+const mobileMenuOrderButton = document.querySelector("#mobile-menu-order-button");
 const retailPurchaseButton = document.querySelector("#retail-purchase-button");
 const wholesalePurchaseButton = document.querySelector("#wholesale-purchase-button")
 const orderModalCloseButton = document.querySelector("#order-modal-close-button");
@@ -48,7 +49,8 @@ const onOrderModalClose = () => {
     orderModal.classList.remove("d-flex");
 }
 
-orderButton.addEventListener("click", onOrderModalOpen);;
+orderButton.addEventListener("click", onOrderModalOpen);
+mobileMenuOrderButton.addEventListener("click", onOrderModalOpen);
 retailPurchaseButton.addEventListener("click", onOrderModalOpen);
 wholesalePurchaseButton.addEventListener("click", onOrderModalOpen);
 orderModalCloseButton.addEventListener("click", onOrderModalClose);

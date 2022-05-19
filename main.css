@@ -74,6 +74,17 @@ body {
     z-index: 9;
 }
 
+#mobile-menu-order-button {
+    background: #eb8072;
+    border-radius: 14px;
+    font-size: 22px;
+    color: #ffffff;
+    border: none;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 4px;
+}
+
 /** - Description - */
 
 #description {
@@ -331,7 +342,7 @@ body {
     background-color: #282f4b;
     padding: 28px 52px;
     border-radius: 28px;
-    min-width: 700px;
+    min-width: 600px;
 }
 
 #order-modal .content #order-modal-close-button {
@@ -349,8 +360,8 @@ body {
 }
 
 #order-modal form label span {
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 100%;
     color: #fff;
 }
 
