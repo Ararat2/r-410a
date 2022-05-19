@@ -20,10 +20,16 @@ body {
     list-style-type: none !important;
 }
 
+.no-outline:focus {
+    outline: none;
+}
+
 /** - App Header - */
 
 #app-header {
     background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
 }
 
 #app-header .content {
@@ -300,6 +306,57 @@ body {
     color: #fff;
 }
 
+/** - Order Modal - */
+
+#order-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#order-modal .content {
+    background-color: #282f4b;
+    padding: 28px 52px;
+    border-radius: 28px;
+    min-width: 700px;
+}
+
+#order-modal .content #order-modal-close-button {
+    height: 48px;
+    width: 48px;
+    font-size: 32px;
+    line-height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+#order-modal form {
+    gap: 24px;
+}
+
+#order-modal form label span {
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+}
+
+#order-modal form label input {
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    border-bottom: 1px solid #c0c0c0;
+    width: 320px;
+}
+
 /** - Media Queries - */
 
 @media only screen and (max-width: 1400px) {
@@ -356,6 +413,20 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
+
+    /** - Order Modal - */
+
+    #order-modal .content {
+        min-width: 520px;
+    }
+
+    #order-modal .content label span {
+        margin-bottom: 8px;
+    }
+
+    #order-modal .content input {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -377,5 +448,14 @@ body {
 
     #description .order-type {
         font-size: 30px;
+    }
+
+    /** - Order Modal - */
+
+    #order-modal .content {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        min-width: 300px;
     }
 }
