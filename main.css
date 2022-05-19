@@ -108,12 +108,48 @@ body {
     color: #eb8072;
 }
 
+/** - Use Cases - */
+
+#use-cases {
+    background-color: #282f4b;
+}
+
+#use-cases .content {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#use-cases .content .cart {
+    padding: 18px 24px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    gap: 8px;
+    min-height: 355px;
+    height: 100%;
+}
+
+#use-cases .content .cart p {
+    font-size: 32px;
+    line-height: 47px;
+    color: #000000;
+}
+
 /** Media Queries */
 
 @media only screen and (max-width: 1400px) {
 }
 
 @media only screen and (max-width: 1200px) {
+    /** - Use Cases - */
+
+    #use-cases .content .row {
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
