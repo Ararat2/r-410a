@@ -118,10 +118,7 @@ body {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 92px;
-    padding-bottom: 92px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 92px 70px;
 }
 
 #use-cases .content .cart {
@@ -139,6 +136,61 @@ body {
     color: #000000;
 }
 
+/** - Specifications - */
+
+#specifications {
+    background-color: #f1f1f1;
+}
+
+#specifications .title {
+    margin-bottom: 96px;
+}
+
+#specifications .title h2 {
+    font-size: 48px;
+    line-height: 71px;
+    color: #000;
+}
+
+#specifications .title span {
+    background-color: #eb8072;
+    color: #fff;
+    line-height: 100%;
+    padding-bottom: 14px;
+}
+
+#specifications .content {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+#specifications .content .first {
+    margin-bottom: 96px;
+}
+
+#specifications .content .first img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#specifications .content .first .list {
+    font-size: 32px;
+    line-height: 47px;
+}
+
+#specifications .content .first .list h3 {
+    font-size: 42px;
+}
+
+#specifications .content .second p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
 /** Media Queries */
 
 @media only screen and (max-width: 1400px) {
@@ -149,6 +201,20 @@ body {
 
     #use-cases .content .row {
         gap: 16px;
+    }
+
+    /** - Specifications - */
+
+    #specifications .title {
+        margin-bottom: 42px;
+    }
+
+    #specifications .content .first {
+        margin-bottom: 42px;
+    }
+
+    #specifications .list {
+        padding-top: 32px;
     }
 }
 
