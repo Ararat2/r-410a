@@ -59,6 +59,55 @@ body {
     color: #000000;
 }
 
+/** - Description - */
+
+#description {
+    background-color: #f1f1f1;
+}
+
+#description .content {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 46px;
+}
+
+#description .content img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#description .title {
+    font-size: 96px;
+    line-height: 142px;
+    color: #eb8072;
+}
+
+#description .target {
+    font-size: 48px;
+    line-height: 71px;
+    color: #eb8072;
+}
+
+#description .order-type {
+    font-size: 48px;
+    line-height: 71px;
+    color: #ffffff;
+    background-color: #282f4b;
+}
+
+#description .name {
+    font-size: 48px;
+    line-height: 71px;
+    color: #eb8072;
+}
+
+#description .price {
+    font-size: 64px;
+    line-height: 95px;
+    color: #eb8072;
+}
+
 /** Media Queries */
 
 @media only screen and (max-width: 1400px) {
@@ -68,6 +117,12 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+    /** - Description - */
+
+    #description .content .target {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
