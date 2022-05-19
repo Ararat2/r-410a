@@ -222,6 +222,84 @@ body {
     padding-bottom: 10px;
 }
 
+/** - Feedbacks - */
+
+#feedbacks {
+    background-color: #f1f1f1;
+}
+
+#feedbacks .content {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 27px;
+}
+
+#feedbacks .content .cart {
+    padding: 18px 24px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    gap: 8px;
+    min-height: 355px;
+    height: 100%;
+}
+
+#feedbacks .content .cart .name {
+    font-size: 32px;
+    line-height: 47px;
+    color: #000000;
+}
+
+#feedbacks .content .cart .date {
+    font-size: 24px;
+    line-height: 36px;
+    color: #575555;
+}
+
+#feedbacks .content .cart .comment {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+/** - App Footer - */
+
+#app-footer {
+    background-color: #282f4b;
+}
+
+#app-footer .content {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 27px;
+}
+
+#app-footer .info {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+#app-footer .title {
+    font-size: 32px;
+    line-height: 47px;
+    color: #fff;
+}
+
+#app-footer .copyright {
+    margin-top: 300px !important;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
 /** - Media Queries - */
 
 @media only screen and (max-width: 1400px) {
@@ -247,6 +325,12 @@ body {
     #specifications .list {
         padding-top: 32px;
     }
+
+    /** - Feedbacks - */
+
+    #feedbacks .content .row {
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -259,6 +343,19 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    /** - Purpose - */
+
+    #purpose .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /** - Feedbacks - */
+
+    #feedbacks .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -267,5 +364,18 @@ body {
     #app-header .contact {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    /** - Specifications - */
+
+    #specifications .title h2 {
+        font-size: 40px;
+        padding-bottom: 12px;
+    }
+
+    /** - Descriptions - */
+
+    #description .order-type {
+        font-size: 30px;
     }
 }
