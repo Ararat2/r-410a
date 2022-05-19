@@ -108,20 +108,20 @@ body {
     color: #eb8072;
 }
 
-/** - Use Cases - */
+/** - Purpose - */
 
-#use-cases {
+#purpose {
     background-color: #282f4b;
 }
 
-#use-cases .content {
+#purpose .content {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 92px 70px;
 }
 
-#use-cases .content .cart {
+#purpose .content .cart {
     padding: 18px 24px;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -130,7 +130,7 @@ body {
     height: 100%;
 }
 
-#use-cases .content .cart p {
+#purpose .content .cart p {
     font-size: 32px;
     line-height: 47px;
     color: #000000;
@@ -199,7 +199,7 @@ body {
 @media only screen and (max-width: 1200px) {
     /** - Use Cases - */
 
-    #use-cases .content .row {
+    #purpose .content .row {
         gap: 16px;
     }
 
