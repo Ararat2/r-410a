@@ -65,6 +65,15 @@ body {
     color: #000000;
 }
 
+/** - Mobile Menu - */
+
+#mobile-menu {
+    background-color: #282f4b;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 9;
+}
+
 /** - Description - */
 
 #description {
@@ -270,13 +279,13 @@ body {
     color: #000;
 }
 
-/** - App Footer - */
+/** - Contacts - */
 
-#app-footer {
+#contacts {
     background-color: #282f4b;
 }
 
-#app-footer .content {
+#contacts .content {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -285,19 +294,19 @@ body {
     padding-top: 27px;
 }
 
-#app-footer .info {
+#contacts .info {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
 }
 
-#app-footer .title {
+#contacts .title {
     font-size: 32px;
     line-height: 47px;
     color: #fff;
 }
 
-#app-footer .copyright {
+#contacts .copyright {
     margin-top: 300px !important;
     padding-top: 24px;
     padding-bottom: 24px;

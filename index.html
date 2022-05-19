@@ -30,11 +30,17 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-3 info order-1">
-                            <p class="m-0 text-center text-md-start">
+                        <div class="col-8 col-xl-3 info order-1">
+                            <p class="m-0">
                                 Официальный дистребьютор товара <br />
                                 ООО “Альянс-Медиа” договор № 346546-1
                             </p>
+                        </div>
+
+                        <div class="col-4 d-xl-none d-flex justify-content-center align-items-center order-2">
+                            <button id="mobile-menu-open-button" class="btn fs-2">
+                                <i class="fas fa-bars"></i>
+                            </button>
                         </div>
 
                         <nav class="col-12 col-sm-5 col-md-6 order-3 order-sm-2">
@@ -53,7 +59,7 @@
                                 <li class="d-none d-xl-block">
                                     <a href="#contacts" class="no-underline">Контакты</a>
                                 </li>
-                                <li>
+                                <li class="d-none d-xl-block">
                                     <button
                                         id="order-button"
                                         class="d-flex align-items-center justify-content-center px-4 py-2"
@@ -65,7 +71,7 @@
                         </nav>
 
                         <div
-                            class="col-12 col-sm-4 col-md-3 d-flex justify-content-center align-items-center order-2 order-sm-3"
+                            class="col-12 col-sm-4 col-md-3 d-none d-xl-flex justify-content-center align-items-center order-2 order-sm-3"
                         >
                             <a href="tel:88008008080" class="no-underline contact">8 (800) 800 80 80</a>
                         </div>
@@ -73,6 +79,35 @@
                 </div>
             </div>
         </header>
+
+        <div id="mobile-menu" class="position-fixed d-none flex-column justify-content-between left-0 top-0 p-3">
+            <div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn text-white fs-3" id="mobile-menu-close-button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="list-none fs-5 p-0 m-0 h-100 list-style-none d-flex flex-column align-items-center">
+                    <li class="py-2">
+                        <a href="#specifications" class="no-underline text-white">Технические характеристики</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#purpose" class="no-underline text-white">Назначение</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#feedbacks" class="no-underline text-white">Отзывы</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#contacts" class="no-underline text-white">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                <div class="text-white d-flex align-items-center m-1">
+                    <a href="tel:88008008080" class="text-white no-underline">8 (800) 800 80 80</a>
+                </div>
+            </div>
+        </div>
 
         <section id="description">
             <div class="content">
@@ -267,7 +302,7 @@
             </div>
         </section>
 
-        <footer id="app-footer">
+        <footer id="contacts">
             <div class="content">
                 <div class="container-fluid">
                     <div class="row justify-content-between">
